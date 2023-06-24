@@ -4,4 +4,3 @@ import pprint
 with open('data.json', 'r') as f:
   data = json.load(f)
 
-pprint.pprint(data)
