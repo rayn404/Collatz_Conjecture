@@ -1,0 +1,15 @@
+Data JSON file
+
+-calcs records the iterations, the numbers and other important values
+-nums records the numbers in the iteration and in the second list the number which will ouput it
+-l records largest number in iteration
+-s records smallest number in iteration
+-d records total edges till central node
+-f records fraction until that iteration
+-t records total numbers counted in that iteration
+
+-L records largest number ever calculated 
+-S records smallest number:1
+-T records total numbers: sum of all the totals of each iteration
+-F records most recent fraction
+-I records total iterations done
