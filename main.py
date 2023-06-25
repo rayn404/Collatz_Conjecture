@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 import json
 import time
-from pprint import pprint
 
 with open('data.json', 'r') as f:
     data = json.load(f)
@@ -46,7 +45,9 @@ def create_next(prev_iter):
     new_iter['d'] = prev_iter['d'] + 1
     return new_iter
 
-for i in range(10):
+
+for i in range(15):
+    print(i)
     new_iter = create_next(data['calcs'][data['I']])
     
     if(new_iter['l'] > data['L']):
@@ -58,9 +59,11 @@ for i in range(10):
     new_iter['f'] = data['F'] = data['T']/data['L']
     
     data['calcs'].append(new_iter)
-    
+     
     if i%5==0:
       time.sleep(1)
-    
-pprint(data)
-
+ 
+ 
+   
+with open('./data.json', 'w') as f:
+    json.dump(data, f)
